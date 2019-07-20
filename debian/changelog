@@ -1,3 +1,9 @@
+ocaml (4.02.3-9digitalocean) trusty; urgency=medium
+
+  * No change rebuild for Trusty
+
+ -- Andrew James <ajames@digitalocean.com>  Sat, 20 Jul 2019 01:43:50 -0600
+
 ocaml (4.02.3-9) unstable; urgency=medium
 
   * obey hardening LDFLAGS (Closes: #792502). Thanks to Török Edwin
