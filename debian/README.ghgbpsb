@@ -41,10 +41,10 @@ Use ghgbpsb:
   Create a build tag. An example tag message is provided but it is always safe
   to copy the message from the last production release.
 
-    $ cd libvirt
+    $ cd ocaml
     $ git tag exampletag -m 'distribution=trusty; archive_components="main"; DEB_BUILD_OPTIONS="reproducible=+all"'
 
   Build the tag:
 
     $ cd ..
-    $ ghgbpsb libvirt exampletag
+    $ ghgbpsb ocaml exampletag
