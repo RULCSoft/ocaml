@@ -845,7 +845,7 @@ module Analyser =
 
         | Parsetree.Psig_module {Parsetree.pmd_name=name; pmd_type=module_type} ->
             let complete_name = Name.concat current_module_name name.txt in
-            (* get the the module type in the signature by the module name *)
+            (* get the module type in the signature by the module name *)
             let sig_module_type =
               try Signature_search.search_module table name.txt
               with Not_found ->

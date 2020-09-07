@@ -369,7 +369,7 @@ let merge_classes merge_options mli ml =
   mli.cl_loc <- { mli.cl_loc with loc_impl = ml.cl_loc.loc_impl } ;
   mli.cl_parameters <- merge_parameters mli.cl_parameters ml.cl_parameters;
 
-  (* we must reassociate comments in @param to the the corresponding
+  (* we must reassociate comments in @param to the corresponding
      parameters because the associated comment of a parameter may have been changed y the merge.*)
   Odoc_class.class_update_parameters_text mli;
 
@@ -498,7 +498,7 @@ let merge_class_types merge_options mli ml =
                      m.met_value.val_parameters <- (merge_parameters
                                                       m.met_value.val_parameters
                                                       m2.met_value.val_parameters) ;
-                     (* we must reassociate comments in @param to the the corresponding
+                     (* we must reassociate comments in @param to the corresponding
                         parameters because the associated comment of a parameter may have been changed y the merge.*)
                      Odoc_value.update_value_parameters_text m.met_value;
 
@@ -689,7 +689,7 @@ let rec merge_module_types merge_options mli ml =
                      v.val_parameters <- (merge_parameters
                                             v.val_parameters
                                             v2.val_parameters) ;
-                     (* we must reassociate comments in @param to the the corresponding
+                     (* we must reassociate comments in @param to the corresponding
                         parameters because the associated comment of a parameter may have been changed y the merge.*)
                      Odoc_value.update_value_parameters_text v;
 
@@ -962,7 +962,7 @@ and merge_modules merge_options mli ml =
                  v.val_parameters <- (merge_parameters
                                         v.val_parameters
                                         v2.val_parameters) ;
-                 (* we must reassociate comments in @param to the the corresponding
+                 (* we must reassociate comments in @param to the corresponding
                     parameters because the associated comment of a parameter may have been changed y the merge.*)
                  Odoc_value.update_value_parameters_text v;
 
